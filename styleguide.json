@@ -1,3 +1,8 @@
 {
-  "base": 16
+  "base": 16,
+  "color": {
+      "dark": "hsl(14deg 5% 23%)",
+      "dark-fade": "hsla(14deg 5% 23% / 50%)",
+      "light": "hsl(14deg 14% 98%)"
+  }
 }

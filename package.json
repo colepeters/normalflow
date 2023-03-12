@@ -6,7 +6,9 @@
     "lint": "eslint ./app/**/*.mjs --fix"
   },
   "dependencies": {
-    "@enhance/arc-plugin-enhance": "^5.0.2"
+    "@enhance/arc-plugin-enhance": "^5.0.2",
+    "arcdown": "^2.1.0",
+    "gray-matter": "^4.0.3"
   },
   "devDependencies": {
     "@architect/sandbox": "^5.4.1",

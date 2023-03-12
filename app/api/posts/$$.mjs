@@ -18,8 +18,6 @@ export async function get (req) {
 
   const post = await arcdown.render(docMarkdown)
 
-  console.log ({ post })
-
   return {
     json: {
       post

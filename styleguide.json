@@ -3,7 +3,7 @@
   "color": {
       "dark": "hsl(266deg 10% 12%)",
       "dark-fade": "hsla(14deg 5% 23% / 50%)",
-      "light": "hsl(14deg 14% 92%)",
-      "light-fade": "hsla(14deg 14% 92% / 50%)"
+      "light": "hsl(14deg 14% 94%)",
+      "light-fade": "hsla(14deg 14% 94% / 50%)"
   }
 }

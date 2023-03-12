@@ -117,6 +117,10 @@ export default function Head(state) {
           padding-left: var(--space-l);
         }
 
+        img {
+          border: 12px solid var(--dark-fade);
+        }
+
         @media (prefers-color-scheme: dark) {
           html,
           body {
@@ -125,6 +129,10 @@ export default function Head(state) {
           }
 
           blockquote {
+            border-color: var(--light-fade);
+          }
+
+          img {
             border-color: var(--light-fade);
           }
         }

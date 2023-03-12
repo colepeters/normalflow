@@ -19,8 +19,6 @@ export async function get (req) {
     }
   }).sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
 
-  console.log ({ posts })
-
   return {
     json: {
       title: 'Normal Flow — Dispatches on design & engineering',

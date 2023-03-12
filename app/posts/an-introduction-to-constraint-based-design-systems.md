@@ -78,23 +78,10 @@ Of course you would. Let’s talk about spacing scales.
 
 The idea behind spacing scales is this: any (and every) given layout should use only certain, consistent increments of space between discrete elements in that layout. Need an input to be some distance away from its label? Pick a value from the spacing scale. Designing a grid layout? The gutters between each column and row are sized with a value from the spacing scale, too. Every element of your UI, with rare exception, should be spaced apart from other elements by an interval of space found on your spacing scale.
 
-<Box as='figure' my={4} mx='auto' mx={0}>
- <Box
-    borderWidth={2}
-    borderStyle='solid'
-    borderColor='darkBackground'
-    maxWidth='max-content'
-    mx='auto'
-  >
- &lt;Image
- src={spacingScale}
- style={{ width: &#8216;100%&#8217;, maxWidth: 640, height: &#8216;auto&#8217;, display: &#8216;block&#8217; }}
- /&gt;
- </Box>
- <Text as='figcaption' mt={1} textAlign='center'>
- A rough sketch of a spacing scale and its use in a component and page layout
- </Text>
-</Box>
+<figure>
+  <post-image src='/_public/images/design-systems/spacing-scale.jpg' alt=''></post-image>
+  <figcaption>A rough sketch of a spacing scale and its use with component and page layouts</figcaption>
+</figure>
 
 Spacing scales are ‘modular’ in nature (as opposed to a continuous range), where each step in the scale is a given proportion larger than the previous one. A spacing scale could be based on powers of 2, for example (<code>4px, 8px, 16px, 32px, 64px, …</code>), or <a href="https://www.modularscale.com/?1&amp;em&amp;1.618">something more complex</a>. The important thing is deciding on a scale that makes sense for the team, baking that scale into your design tools and codebase, and then sticking to it.
 
@@ -133,23 +120,10 @@ First, a quick recap of terminology: when describing three dimensional objects, 
 > 
 > — [The Volume and Surface Area of Computer Programs](http://www.lagado.name/blog/the-volume-and-surface-area-of-computer-programs/)
 
-<Box as='figure' my={4} mx={0}>
- <Box
-    borderWidth={2}
-    borderStyle='solid'
-    borderColor='darkBackground'
-    maxWidth='max-content'
-    mx='auto'
-  >
- &lt;Image
- src={cube}
- style={{ width: &#8216;100%&#8217;, maxWidth: 640, height: &#8216;auto&#8217;, display: &#8216;block&#8217; }}
- /&gt;
- </Box>
- <Text as='figcaption' fontSize={0} fontStyle='italic' mt={1} textAlign='center'>
- Differences in the rate of change between a cube’s surface area and volume
- </Text>
-</Box>
+<figure>
+  <post-image src='/_public/images/design-systems/cube.jpg' alt=''></post-image>
+  <figcaption>A sketch demonstrating differences in the rate of change between a cube’s surface area and volume</figcaption>
+</figure>
 
 Now, let’s consider a colour palette — say, the most minimal of colour palettes, black and white. With just black and white in our palette, we can only create 2 different colour combinations:
 

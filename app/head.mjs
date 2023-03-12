@@ -8,6 +8,10 @@ export default function Head(state) {
     ? `${post.title} — Normal Flow`
     : store.title
 
+  const canonicalMeta = post?.frontmatter.canonicalUrl
+    ? `<link rel='canonical' href='${post.frontmatter.canonicalUrl}' />`
+    : ''
+
   return `
     <!DOCTYPE html>
     <html lang="en">
@@ -16,6 +20,7 @@ export default function Head(state) {
       <meta name="viewport" content="width=device-width, initial-scale=1">
       ${getLinkTag()}
       <link rel="icon" href="/_public/favicon.svg">
+      ${canonicalMeta}
       <title>${title}</title>
       <style>
         :root {

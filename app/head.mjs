@@ -111,6 +111,24 @@ export default function Head(state) {
           overflow-x: scroll;
         }
 
+        blockquote {
+          border-left: 3px double var(--dark-fade);
+          font-style: italic;
+          padding-left: var(--space-l);
+        }
+
+        @media (prefers-color-scheme: dark) {
+          html,
+          body {
+            background: var(--dark);
+            color: var(--light);
+          }
+
+          blockquote {
+            border-color: var(--light-fade);
+          }
+        }
+
       </style>
     </head>
   `

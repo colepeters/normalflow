@@ -14,6 +14,12 @@ export default function Masthead ({ html }) {
         border-color: var(--dark-fade);
       }
 
+      @media (prefers-color-scheme: dark) {
+        a {
+          border-color: var(--light-fade);
+        }
+      }
+
       span {
         font-size: 0.8em;
       }

@@ -1,11 +1,11 @@
 import { getLinkTag } from '@enhance/arc-plugin-styles/get-styles'
 
 export default function Head(state) {
-  const { store, req } = state
-  const { path } = req
+  const { store } = state
+  const { post } = store
 
-  const title = path.includes('/posts')
-    ? `${store.title} — Normal Flow`
+  const title = post
+    ? `${post.title} — Normal Flow`
     : store.title
 
   return `

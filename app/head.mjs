@@ -82,7 +82,7 @@ export default function Head(state) {
 
         body {
           font-size: var(--text-0);
-          font-feature-settings: "clig", "kern", "liga", "onum", "pnum";
+          font-feature-settings: "clig", "kern", "liga", "onum", "pnum", "ss01";
           padding: var(--space-m);
           max-width: 74ch;
           margin-inline: auto;

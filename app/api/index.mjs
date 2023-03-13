@@ -5,7 +5,7 @@ import { readdirSync, readFileSync } from 'fs'
 export async function get (req) {
   const { path } = req
 
-  const dirUrl = new URL(`../..${path}app/posts`, import.meta.url)
+  const dirUrl = new URL(`..${path}posts`, import.meta.url)
   const files = readdirSync(dirUrl)
 
   const posts = files.map(file => {

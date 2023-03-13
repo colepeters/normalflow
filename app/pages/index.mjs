@@ -12,8 +12,17 @@ export default function Index ({ html, state }) {
         margin-block: var(--space-3xl);
         gap: var(--space-3xl);
       }
+
+      .colophon {
+        font-size: var(--text--1);
+      }
     </style>
+
     <mast-head></mast-head>
+
+    <a href='/colophon' class='colophon block uppercase tracking3 text-center'>
+      Colophon
+    </a>
 
     <section class='grid grid-row'>
       ${postsMarkup}

@@ -64,6 +64,7 @@ export default function Head(state) {
 
         h1 {
           font-size: var(--text-3);
+          font-weight: 400;
           margin-block: var(--space-3xl);
         }
 

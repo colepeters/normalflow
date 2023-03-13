@@ -1,6 +1,7 @@
 ---
 title: "Past Informs the Present: Begin’s Approach to CSS"
 date: 2023-01-10
+excerpt: 'A brief recap of some of the history and evolution of CSS, with a focus on several methodologies — some battle tested, some more recent — for making the process of styling web apps and components both enjoyable and effective.'
 canonicalSite: 'Begin'
 canonicalUrl: 'https://begin.com/blog/posts/2023-01-10-past-informs-the-present-our-approach-to-css'
 ---
@@ -187,7 +188,11 @@ There are, however, many common objections raised against the atomic CSS methodo
   <dd class='mb0'>Nope. Inline styles are defined in HTML; atomic classes are defined in a style sheet. Inline styles do not permit media queries, pseudo elements, or pseudo classes; atomic classes do. Inline styles have a specificity ranking of 1-0-0-0, which can only be outranked by <code>!important</code>; atomic classes have a specificity of 0-0-1-0, the same as any single class. An inline style’s source of truth is its own singular invocation on a given element; an atomic class’ source of truth is a style sheet. There is a lexical resemblance between <code>class='red'</code> and <code>style='color: red'</code>; this is where the similarities end.
 
   <dt>‘Putting so many classes on my elements looks ugly/is hard to read.’</dt>
-  <dd class='mb0'>Admittedly, <code>&lt;article class='font-sans text1-xl leading4 m-auto mt0 mb0 mt2-md mb2-md mt4-lg mb4-lg p0 p2-sm p4-md p5-lg p6-xl'/&gt;</code> doesn’t read like poetry (and yes, that snippet is taken from this very page as of this writing). However, something that <em>is</em> a delight is being able to rapidly iterate on this composition — from the logical origin of that composition (the markup), whether in the browser or my editor — to explore <a href='https://www.colepeters.dev/posts/an-introduction-to-constraint-based-design-systems'>different combinatorial spaces within the bounds of a design system</a>. Iterating in this fashion simply cannot be matched when using other methodologies.</dd>
+  <dd class='mb0'>
+
+  Admittedly, <code>&lt;article class='font-sans text1-xl leading4 m-auto mt0 mb0 mt2-md mb2-md mt4-lg mb4-lg p0 p2-sm p4-md p5-lg p6-xl'/&gt;</code> doesn’t read like poetry (and yes, that snippet is taken from [this very page](https://begin.com/blog/posts/2023-01-10-past-informs-the-present-our-approach-to-css) as of this writing). However, something that <em>is</em> a delight is being able to rapidly iterate on this composition — from the logical origin of that composition (the markup), whether in the browser or my editor — to explore <a href='https://www.colepeters.dev/posts/an-introduction-to-constraint-based-design-systems'>different combinatorial spaces within the bounds of a design system</a>. Iterating in this fashion simply cannot be matched when using other methodologies.
+
+  </dd>
 
   <dt>‘This is so not <a href='https://en.wikipedia.org/wiki/Don%27t_repeat_yourself'>DRY</a>.’</dt>
   <dd class='mb0'>It’s true, atomic CSS can lead to repeating <em>declarations</em> of various styling rules — but I vastly prefer repeating declarations to repeating <em>definitions</em> (which, in my experience, are much harder to maintain). Also, remember that every time you repeat a class name, that’s one more addition you didn’t have to make to your style sheet! Ultimately, this is a matter of choosing what kind of repetition you want, not one of avoiding repetition altogether.</dd>

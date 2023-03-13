@@ -1,6 +1,7 @@
 ---
 title: An Introduction to Constraint Based Design Systems
 date: 2022-08-12
+excerpt: 'Effective designs optimize for constraints. These constraints are not just useful, they are critical: a beautiful building not designed for the constraints of tectonic movement and climate variability will collapse, and products not designed for the myriad constraints of the web will never amass a critical user base. Furthermore, a design system without adequate constraints will quickly grow into a disordered mess, especially as more contributors join in and more design problems are encountered.'
 ---
 
 Over the course of my 15 years of work in design and engineering, I’ve spent an enormous amount of time thinking about, talking about, building, and maintaining design systems — the structures that make up the foundation of modern user interfaces on the web. Particularly as I’ve grown into more and more of a specialist in this area, I’ve made it my responsibility to make sure my team(s) are all working from a shared technical perspective. This is especially important for designers and frontend engineers, as they operate in distinct but overlapping domains.

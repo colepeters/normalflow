@@ -1,6 +1,7 @@
 ---
 title: Redefining Developer Experience
 date: 2023-02-28
+excerpt: 'For years now, the most popular JS frameworks have carried out intense marketing initiatives based on the premise of improving developer experience (DX). What is it about these promises of great DX that is consistently delivering poor user experiences? Can we change our approach to DX for the betterment of end users?'
 canonicalSite: "Begin"
 canonicalUrl: "https://begin.com/blog/posts/2023-02-28-redefining-developer-experience"
 ---

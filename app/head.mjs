@@ -12,6 +12,10 @@ export default function Head(state) {
     ? `<link rel='canonical' href='${post.frontmatter.canonicalUrl}' />`
     : ''
 
+  const descriptionMeta = post?.frontmatter.excerpt
+    ? post.frontmatter.excerpt
+    : 'Dispatches on design & engineering'
+
   return `
     <!DOCTYPE html>
     <html lang="en">
@@ -21,6 +25,7 @@ export default function Head(state) {
       ${getLinkTag()}
       <link rel="icon" href="/_public/favicon.svg">
       ${canonicalMeta}
+      <meta name='description' content='${descriptionMeta}' />
       <title>${title}</title>
       <style>
         :root {
@@ -44,7 +49,7 @@ export default function Head(state) {
         }
 
         html, body {
-          font-family: Test Signifier, --system-ui, BlinkMacSystemFont, sans-serif;
+          font-family: Test Signifier, Georgia, Times New Roman, serif;
           color: var(--dark);
           background: var(--light);
         }

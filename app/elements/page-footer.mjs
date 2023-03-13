@@ -14,7 +14,7 @@ export default function PageFooter ({ html }) {
     <footer>
       <p class='text-center'>
         You’ve reached the bottom. Thanks for reading! <br />
-        Care to go back <a href='/'>back to the front page</a>?
+        Care to go <a href='/'>back to the front page</a>?
       </p>
     </footer>
   `

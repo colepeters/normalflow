@@ -35,5 +35,6 @@ export default function Posts ({ html, state }) {
         ${post.html}
       </div>
     </article>
+    <page-footer></page-footer>
   `
 }

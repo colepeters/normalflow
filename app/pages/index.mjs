@@ -18,7 +18,7 @@ export default function Index ({ html, state }) {
       }
     </style>
 
-    <mast-head></mast-head>
+    <mast-head id='#'></mast-head>
 
     <a href='/colophon' class='colophon block uppercase tracking3 text-center'>
       Colophon
@@ -27,5 +27,7 @@ export default function Index ({ html, state }) {
     <section class='grid grid-row'>
       ${postsMarkup}
     </section>
+
+    <index-footer></index-footer>
   `
 }

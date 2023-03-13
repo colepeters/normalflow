@@ -93,7 +93,7 @@ As discussed, developer experience today encompasses a nearly countless number o
 
 Allow me a moment to construct a metaphor. Take a look at these scissors:
 
-[Tajika herb clippers]
+<post-image src='/_public/images/dx/tajika-herb-clippers.jpg' alt='A pair of herb clippers by Tajika. Rustic looking appearance, two small hand forged blades are joined by an elongated U shaped piece of steel.'></post-image>
 
 These scissors may look ancient, but in fact they are herb clippers, crafted today by Tajika Haruo Ironworks in Oto city, Japan. The father and son duo of Takeo and Daisuke Tajika forge these clippers by hand, transforming raw steel into precise configurations. These herb clippers in particular are intended for the kind of work where ordinary scissors would lack the required measure of precision: the delicate trimming of herbs in the garden or kitchen, or the creation of exquisite floral arrangements. Because of their design, the user need only apply a small amount of pressure to make a perfect cut, and the extreme sharpness of the blades means that the plants from which cuttings are made will be able to heal with the least amount of effort (just as in human tissue, where an incision from a scalpel is easier to heal than, say, the sort of rough abrasion caused by accidentally running one’s hand into cheese grater — don’t ask me how I know).
 
@@ -101,7 +101,7 @@ In short, these herb clippers are designed to do one thing, and they do it extre
 
 Now consider these ‘scissors’:
 
-[Swiss army knife]
+<post-image src='/_public/images/dx/swiss-army-knife.jpg' alt='A Swiss Army Knife, with its can opener, knives, scissors, screwdriver, and other assorted tools exposed.'></post-image>
 
 Ah, the venerable Swiss Army Knife. A pair of herb clippers this is not. The Swiss Army Knife takes the opposite approach of the Tajikas. This is a tool designed to maximize functionality — a tool for heading out into the great unknown, for tackling emergencies and tasks you may not be able to anticipate. With this one piece of equipment, you could accomplish any number of tasks, from fastening a screw, opening a can or bottle, chopping small vegetables, preparing a fish for cooking, whittling a piece of wood, and, yes, cutting up materials with the scissors. I wouldn’t expect to be able to do any of these tasks particularly _well_ (nor would I trim herbs or flowers with those scissors if another option was available), but that’s never been the point of the Swiss Army Knife; the point has always been to be prepared to deal with a variety of tasks with a modicum of success. It’s a tool for survival, not fine craft.
 

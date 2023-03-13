@@ -88,11 +88,37 @@ export default function Head(state) {
         ol,
         dl {
           list-style-position: outside;
-          padding-left: 3rem;
+          padding-left: 3em;
         }
 
         dt {
           font-weight: 700;
+        }
+
+        [role='table'] {
+          font-size: 0.8em;
+        }
+
+        .thead {
+          background: var(--dark);
+          color: var(--light);
+          padding: 1em;
+        }
+
+        .tbody {
+          border: 2px solid var(--dark);
+          padding: 1em;
+        }
+
+        @media (prefers-color-scheme: dark) {
+          .thead {
+            background: var(--light);
+            color: var(--dark);
+          }
+
+          .tbody {
+            border-color: var(--light);
+          }
         }
 
         a {
@@ -108,7 +134,20 @@ export default function Head(state) {
         }
 
         pre {
+          border: 2px double var(--dark);
+          padding: 1em;
           overflow-x: scroll;
+        }
+
+        @media (prefers-color-scheme: dark) {
+          pre {
+            border-color: var(--light);
+          }
+        }
+
+        code {
+          font-family: 'IBM Plex Mono', 'Fira Code', 'Fira Mono', 'Source Code Pro', 'Monaco', 'Menlo', monospace;
+          font-size: 0.75em;
         }
 
         blockquote {

@@ -127,116 +127,63 @@ First, a quick recap of terminology: when describing three dimensional objects, 
 
 Now, let’s consider a colour palette — say, the most minimal of colour palettes, black and white. With just black and white in our palette, we can only create 2 different colour combinations:
 
-&lt;Box
- role=&#8216;table&#8217;
- bg=&#8216;white&#8217;
- my={[3, 4]}
- mx=&#8216;auto&#8217;
- borderWidth=&#8216;2px&#8217;
- borderStyle=&#8216;solid&#8217;
- borderColor=&#8216;darkBackground&#8217;
- maxWidth=&#8216;max-content&#8217;
+<div role='table'>
+  <div role='rowgroup'>
+    <div role='row' class='thead grid grid-col col-2'>
+      <span role='columnheader'>
+        Colours
+      </span>
+      <span role='columnheader'>
+        Colour combinations
+      </span>
+    </div>
+  </div>
+  <div role='rowgroup'>
+    <div role='row' class='tbody grid grid-col col-2'>
+      <ol role='cell' class='pl0'>
+        <li>White</li>
+        <li>Black</li>
+      </ol>
+      <ol role='cell' class='pl0'>
+        <li>White/black</li>
+        <li>Black/white</li>
+      </ol>
+    </div>
+  </div>
+</div>
 
-<blockquote>
-<Box role='rowgroup'>
- &lt;Box
- role=&#8216;row&#8217;
- display=&#8216;grid&#8217;
- gridAutoFlow=&#8216;column&#8217;
- gridAutoColumns=&#8216;1fr&#8217;
- gridGap={2}
- px={[2, 3]}
- py={[1, 2]}
- bg=&#8216;darkBackground&#8217;
- &gt;
- <Text as='span' fontWeight='semibold' role='columnheader'>
- Colours
- </Text>
- <Text as='span' fontWeight='semibold' role='columnheader'>
- Colour combinations
- </Text>
- </Box>
- </Box>
- <Box role='rowgroup'>
- &lt;Box
- role=&#8216;row&#8217;
- display=&#8216;grid&#8217;
- gridAutoFlow=&#8216;column&#8217;
- gridAutoColumns=&#8216;1fr&#8217;
- gridGap={2}
- p={[2, 3]}
- &gt;
- <Text as='ol' role='cell' my={0} pl={0} fontSize={0}>
- <Text as='li'>white</Text>
- <Text as='li'>black</Text>
- </Text>
- <Text as='ol' role='cell' my={0} pl={0} fontSize={0}>
- <Text as='li'>white/black</Text>
- <Text as='li'>black/white</Text>
- </Text>
- </Box>
- </Box>
-</Box>
-</blockquote>
+What happens if we add a third colour — say, red? How many colour combinations can we create now?
 
-What happens if we add a third colour, say, red? How many colour combinations can we create now?
+<div role='table'>
+  <div role='rowgroup'>
+    <div role='row' class='thead grid grid-col col-2'>
+      <span role='columnheader'>
+        Colours
+      </span>
+      <span role='columnheader'>
+        Colour combinations
+      </span>
+    </div>
+  </div>
+  <div role='rowgroup'>
+    <div role='row' class='tbody grid grid-col col-2'>
+      <ol role='cell' class='pl0'>
+        <li>White</li>
+        <li>Black</li>
+        <li>Red</li>
+      </ol>
+      <ol role='cell' class='pl0'>
+        <li>White/black/red</li>
+        <li>White/red/black</li>
+        <li>Black/white/red</li>
+        <li>Black/red/white</li>
+        <li>Red/white/black</li>
+        <li>Red/black/white</li>
+      </ol>
+    </div>
+  </div>
+</div>
 
-&lt;Box
- role=&#8216;table&#8217;
- bg=&#8216;white&#8217;
- borderWidth=&#8216;2px&#8217;
- borderStyle=&#8216;solid&#8217;
- borderColor=&#8216;darkBackground&#8217;
- my={[3, 4]}
- mx=&#8216;auto&#8217;
- maxWidth=&#8216;max-content&#8217;
-
-<blockquote>
-<Box role='rowgroup'>
- &lt;Box
- role=&#8216;row&#8217;
- display=&#8216;grid&#8217;
- gridAutoFlow=&#8216;column&#8217;
- gridAutoColumns=&#8216;1fr&#8217;
- gridGap={2}
- px={[2, 3]}
- py={[1, 2]}
- bg=&#8216;darkBackground&#8217;
- &gt;
- <Text as='span' fontWeight='semibold' role='columnheader'>
- Colours
- </Text>
- <Text as='span' fontWeight='semibold' role='columnheader'>
- Colour combinations
- </Text>
- </Box>
- </Box>
- <Box role='rowgroup'>
- &lt;Box
- role=&#8216;row&#8217;
- display=&#8216;grid&#8217;
- gridAutoFlow=&#8216;column&#8217;
- gridAutoColumns=&#8216;1fr&#8217;
- gridGap={2}
- p={[2, 3]}
- &gt;
- <Text as='ol' role='cell' my={0} pl={0} fontSize={0}>
- <Text as='li'>white</Text>
- <Text as='li'>black</Text>
- <Text as='li'>red</Text>
- </Text>
- <Text as='ol' role='cell' my={0} pl={0} fontSize={0}>
- <Text as='li'>white/black/red</Text>
- <Text as='li'>white/red/black</Text>
- <Text as='li'>black/red/white</Text>
- <Text as='li'>black/white/red</Text>
- <Text as='li'>red/white/black</Text>
- <Text as='li'>red/black/white</Text>
- </Text>
- </Box>
- </Box>
-</Box>
-</blockquote>
 
 By adding just a single colour to our palette of two colours, we’ve tripled the amount of colour combinations available to us. Now imagine how adding a single colour creates variations not just in the colour palette itself, but in the amount of possible combinations with other design system parameters like font sizes. This growth relationship sounds familiar, doesn’t it?
 

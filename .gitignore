@@ -4,6 +4,9 @@ node_modules/
 # Enhance temp files
 .enhance/
 
+# Fonts
+public/woff
+
 # Generated assets
 public/static.json
 public/bundles/

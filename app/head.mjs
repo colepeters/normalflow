@@ -48,14 +48,41 @@ export default function Head(state) {
           --space-3xl: clamp(6.00rem, calc(5.48rem + 2.61vw), 7.50rem);
         }
 
+        @font-face {
+          font-family: Signifier;
+          src: url('/_public/woff/sr.woff2') format('woff2');
+          font-weight: 400;
+        }
+
+        @font-face {
+          font-family: Signifier;
+          src: url('/_public/woff/sri.woff2') format('woff2');
+          font-weight: 400;
+          font-style: italic;
+        }
+
+        @font-face {
+          font-family: Signifier;
+          src: url('/_public/woff/sb.woff2') format('woff2');
+          font-weight: 700;
+        }
+
+        @font-face {
+          font-family: Signifier;
+          src: url('/_public/woff/sbi.woff2') format('woff2');
+          font-weight: 700;
+          font-style: italic;
+        }
+
         html, body {
-          font-family: Test Signifier, Georgia, Times New Roman, serif;
+          font-family: Signifier, Georgia, Times New Roman, serif;
           color: var(--dark);
           background: var(--light);
         }
 
         body {
           font-size: var(--text-0);
+          font-feature-settings: "clig", "kern", "liga", "onum", "pnum";
           padding: var(--space-m);
           max-width: 74ch;
           margin-inline: auto;

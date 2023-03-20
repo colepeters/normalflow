@@ -2,6 +2,8 @@
   "name": "normalflow",
   "version": "0.0.1",
   "scripts": {
+    "metadata": "node ./src/plugins/create-post-metadata.js",
+    "rss": "node ./src/plugins/create-rss-feed.js",
     "start": "sandbox",
     "lint": "eslint ./app/**/*.mjs --fix"
   },
@@ -9,6 +11,7 @@
     "@enhance/arc-plugin-enhance": "^5.0.2",
     "@enhance/image": "^0.0.0-alpha.4",
     "arcdown": "^2.1.0",
+    "feed": "^4.2.2",
     "gray-matter": "^4.0.3"
   },
   "devDependencies": {

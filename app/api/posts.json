@@ -1,0 +1,30 @@
+[
+  {
+    "href": "/posts/an-introduction-to-constraint-based-design-systems",
+    "frontmatter": {
+      "title": "An Introduction to Constraint Based Design Systems",
+      "date": "2022-08-12T00:00:00.000Z",
+      "excerpt": "Effective designs optimize for constraints. These constraints are not just useful, they are critical: a beautiful building not designed for the constraints of tectonic movement and climate variability will collapse, and products not designed for the myriad constraints of the web will never amass a critical user base. Furthermore, a design system without adequate constraints will quickly grow into a disordered mess, especially as more contributors join in and more design problems are encountered."
+    }
+  },
+  {
+    "href": "/posts/past-informs-the-present-begins-approach-to-css",
+    "frontmatter": {
+      "title": "Past Informs the Present: Begin’s Approach to CSS",
+      "date": "2023-01-10T00:00:00.000Z",
+      "excerpt": "A brief recap of some of the history and evolution of CSS, with a focus on several methodologies — some battle tested, some more recent — for making the process of styling web apps and components both enjoyable and effective.",
+      "canonicalSite": "Begin",
+      "canonicalUrl": "https://begin.com/blog/posts/2023-01-10-past-informs-the-present-our-approach-to-css"
+    }
+  },
+  {
+    "href": "/posts/redefining-developer-experience",
+    "frontmatter": {
+      "title": "Redefining Developer Experience",
+      "date": "2023-02-28T00:00:00.000Z",
+      "excerpt": "For years now, the most popular JS frameworks have carried out intense marketing initiatives based on the premise of improving developer experience (DX). What is it about these promises of great DX that is consistently delivering poor user experiences? Can we change our approach to DX for the betterment of end users?",
+      "canonicalSite": "Begin",
+      "canonicalUrl": "https://begin.com/blog/posts/2023-02-28-redefining-developer-experience"
+    }
+  }
+]

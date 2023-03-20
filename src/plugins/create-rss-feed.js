@@ -68,7 +68,7 @@ async function generate () {
       link: `${hostname}/posts/${post.href}`,
       description: post.frontmatter.description,
       content: post.content,
-      date: new Date(post.frontmatter.published),
+      date: new Date(post.frontmatter.date),
     })
   }
 

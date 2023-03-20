@@ -4,7 +4,7 @@
         <title>Normal Flow</title>
         <link>https://normalflow.pub</link>
         <description>Dispatches on design &amp; engineering</description>
-        <lastBuildDate>Mon, 20 Mar 2023 20:01:23 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 20 Mar 2023 20:27:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://normalflow.pub via Feed for Node.js</generator>
         <language>en</language>
@@ -13,7 +13,7 @@
             <title><![CDATA[Redefining Developer Experience]]></title>
             <link>https://normalflow.pub/posts/redefining-developer-experience</link>
             <guid>https://normalflow.pub/posts/redefining-developer-experience</guid>
-            <pubDate>Invalid Date</pubDate>
+            <pubDate>Tue, 28 Feb 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>If recent activity is any indication, 2023 is looking like it could be a year of upheaval in the web development industry. For some, this upheaval may be welcome, and indeed a long time coming; for others, it may be more discomforting.</p>
 <p>As <a href="https://begin.com/blog/posts/2023-02-21-why-does-everyone-suddenly-hate-single-page-apps" rel="noopener noreferrer" target="_blank">Simon previously mentioned</a>, Guillermo Rauch, CEO of Vercel, <a href="https://twitter.com/rauchg/status/1619492334961569792" rel="noopener noreferrer" target="_blank">recently tweeted</a> that ‘SPAs were a zero interest rate phenomenon.’ Although criticism of the Single Page Application (SPA) architecture had been growing for quite some time before this, Guillermo’s tweet certainly amplified the debate. A number of articles were published shortly thereafter, responding to this tweet and more broadly the impact of modern JavaScript frameworks (and Guillermo’s own role in popularizing them). Among those articles were pieces from <a href="https://andy-bell.co.uk/speed-for-who/" rel="noopener noreferrer" target="_blank">Andy Bell</a>, <a href="https://infrequently.org/2023/02/the-market-for-lemons" rel="noopener noreferrer" target="_blank">Alex Russell</a>, and <a href="https://www.matuzo.at/blog/2023/single-page-applications-criticism/" rel="noopener noreferrer" target="_blank">Manuel Matuzović</a>.</p>
 <p>This article is not an argument for or against SPAs per se. Instead, I want to focus on a theme running through these articles and the accompanying dialogue throughout the web development community — that is, the topic of developer experience (DX).</p>
@@ -107,7 +107,7 @@
             <title><![CDATA[Past Informs the Present: Begin’s Approach to CSS]]></title>
             <link>https://normalflow.pub/posts/past-informs-the-present-begins-approach-to-css</link>
             <guid>https://normalflow.pub/posts/past-informs-the-present-begins-approach-to-css</guid>
-            <pubDate>Invalid Date</pubDate>
+            <pubDate>Tue, 10 Jan 2023 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>CSS occupies an interesting position among web technologies: while it can appear almost quaint in its simplicity, it’s also been interpreted by some as the most vexing language in web development. Despite its approachability, CSS sometimes gets a bad rap — one that I believe derives from a fundamental misunderstanding of CSS’ history, evolution, and function as an API for styling on the web.</p>
 <p>In this article, we’re going to review some of that history and evolution. We’ll then use that information to inform a focus on several methodologies — some battle tested, some more recent — for making the process of styling web apps and components both enjoyable and effective.</p>
 <h2 id="the-origins-of-css">The origins of CSS</h2>
@@ -313,7 +313,7 @@
             <title><![CDATA[An Introduction to Constraint Based Design Systems]]></title>
             <link>https://normalflow.pub/posts/an-introduction-to-constraint-based-design-systems</link>
             <guid>https://normalflow.pub/posts/an-introduction-to-constraint-based-design-systems</guid>
-            <pubDate>Invalid Date</pubDate>
+            <pubDate>Fri, 12 Aug 2022 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[<p>Over the course of my 15 years of work in design and engineering, I’ve spent an enormous amount of time thinking about, talking about, building, and maintaining design systems — the structures that make up the foundation of modern user interfaces on the web. Particularly as I’ve grown into more and more of a specialist in this area, I’ve made it my responsibility to make sure my team(s) are all working from a shared technical perspective. This is especially important for designers and frontend engineers, as they operate in distinct but overlapping domains.</p>
 <p>The proximity of the design and frontend engineering domains presents an interesting conundrum: both share a partial vocabulary and areas of concern — colour, typography, layout, permutations of state, etc. — yet these concerns come with distinct considerations and methods of execution in each domain. You’ve likely had (or heard) conversations or debates stemming from these differences before: a designer may not understand why an engineer cannot build a seemingly simple interface element, or an engineer may not comprehend why their layout being a marginal number of pixels off from a design specification is causing the designer frustration. These conversations often stem from a misalignment between designers and engineers that can, at the surface level, be hard to make sense of: shouldn’t these two be speaking the same language?</p>
 <p>At its worst, this misalignment between design and engineering can present significant challenges at the organizational level: interface designs and the reality of codebases can become so divergent that teams are constantly forced to make calls between quality (or faithfulness to the designs) and speed — a choice no one enjoys making. Where those decisions aren’t made explicitly, features and entire products can get held up for inordinate amounts of time as colleagues attempt to reconcile these differences on a case by case basis — or, barring time being available for this, these differences can be relegated to no one’s favourite to do piles: technical debt and design debt.</p>

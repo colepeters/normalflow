@@ -4,9 +4,7 @@ export default function Head(state) {
   const { store } = state
   const { post } = store
 
-  const title = post
-    ? `${post.title} — Normal Flow`
-    : store.title
+  const title = post ? `${post.title} — Normal Flow` : store.title
 
   const canonicalMeta = post?.frontmatter.canonicalUrl
     ? `<link rel='canonical' href='${post.frontmatter.canonicalUrl}' />`
@@ -22,8 +20,10 @@ export default function Head(state) {
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      ${getLinkTag()}
       <link rel="icon" href="/_public/favicon.svg">
+      <meta name="image" content="/_public/normal-flow-og-img.jpg" />
+      <meta name="og:image" content="/_public/normal-flow-og-img.jpg" />
+      ${getLinkTag()}
       ${canonicalMeta}
       <meta name='description' content='${descriptionMeta}' />
       <title>${title}</title>

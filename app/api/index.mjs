@@ -8,8 +8,6 @@ export async function get (req) {
   const dirUrl = new URL(`..${path}posts`, import.meta.url)
   const files = readdirSync(dirUrl).filter(file => !file.startsWith('.')) // ignore hidden files like .DS_Store
 
-  console.log({ files })
-
   const posts = files.map(file => {
     const fileContent = readFileSync(`${dirUrl.pathname}/${file}`, 'utf-8')
     const { data } = frontmatter(fileContent)

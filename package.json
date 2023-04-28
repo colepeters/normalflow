@@ -1,6 +1,6 @@
 {
   "name": "normalflow",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "scripts": {
     "metadata": "node ./src/plugins/create-post-metadata.js",
     "rss": "node ./src/plugins/create-rss-feed.js",

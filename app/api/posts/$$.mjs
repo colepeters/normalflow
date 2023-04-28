@@ -1,6 +1,8 @@
-import { readFileSync } from 'fs'
-import { URL } from 'url'
+import url from 'node:url'
 import { Arcdown } from 'arcdown'
+import { URL } from 'url'
+import { dirname, join } from 'node:path'
+import { readFileSync } from 'node:fs'
 
 export async function get (req) {
   const arcdown = new Arcdown()
@@ -18,9 +20,14 @@ export async function get (req) {
 
   const post = await arcdown.render(docMarkdown)
 
+  const here = dirname(url.fileURLToPath(import.meta.url))
+  const hCardPath = join(here, '..', 'h-card.json')
+  const hCard = JSON.parse(readFileSync(hCardPath, 'utf-8'))
+
   return {
     json: {
-      post
+      post,
+      hCard,
     }
   }
 }

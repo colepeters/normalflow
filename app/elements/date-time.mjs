@@ -13,7 +13,7 @@ export default function DateTime ({ html, state }) {
       }
     </style>
     <p class='text-center'>
-      <time datetime='${date}'>
+      <time datetime='${date}' class='dt-published'>
         ${formattedDate}
       </time>
     </p>

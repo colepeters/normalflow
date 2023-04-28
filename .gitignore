@@ -13,6 +13,8 @@ public/static.json
 shared/static.json
 public/bundles/
 public/pages/
+app/api/rss.xml
+app/api/rss.br
 
 # Architect CloudFormation
 sam.json

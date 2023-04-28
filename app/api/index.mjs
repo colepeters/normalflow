@@ -6,7 +6,9 @@ export async function get (req) {
   const { path } = req
 
   const dirUrl = new URL(`..${path}posts`, import.meta.url)
-  const files = readdirSync(dirUrl)
+  const files = readdirSync(dirUrl).filter(file => !file.startsWith('.')) // ignore hidden files like .DS_Store
+
+  console.log({ files })
 
   const posts = files.map(file => {
     const fileContent = readFileSync(`${dirUrl.pathname}/${file}`, 'utf-8')

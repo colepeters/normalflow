@@ -50,26 +50,26 @@ export default function Head(state) {
 
         @font-face {
           font-family: Signifier;
-          src: url('/_public/woff/sr.woff2') format('woff2');
+          src: url('https://normalflow.s3.ca-central-1.amazonaws.com/sr.woff2') format('woff2');
           font-weight: 400;
         }
 
         @font-face {
           font-family: Signifier;
-          src: url('/_public/woff/sri.woff2') format('woff2');
+          src: url('https://normalflow.s3.ca-central-1.amazonaws.com/sri.woff2') format('woff2');
           font-weight: 400;
           font-style: italic;
         }
 
         @font-face {
           font-family: Signifier;
-          src: url('/_public/woff/sb.woff2') format('woff2');
+          src: url('https://normalflow.s3.ca-central-1.amazonaws.com/sb.woff2') format('woff2');
           font-weight: 700;
         }
 
         @font-face {
           font-family: Signifier;
-          src: url('/_public/woff/sbi.woff2') format('woff2');
+          src: url('https://normalflow.s3.ca-central-1.amazonaws.com/sbi.woff2') format('woff2');
           font-weight: 700;
           font-style: italic;
         }

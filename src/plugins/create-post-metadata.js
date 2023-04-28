@@ -8,7 +8,8 @@ const base = join(__dirname, '..', '..', 'app', 'posts')
 async function generate () {
   const { readdir, readFile, writeFile } = require('fs/promises')
 
-  const posts = await readdir(base)
+  const files = await readdir(base)
+  const posts = files.filter(filename => !filename.startsWith('.'))
 
   async function render (path) {
     const file = await readFile(join(base, path), 'utf8')

@@ -1,28 +1,20 @@
-import frontmatter from 'gray-matter'
-import { URL } from 'url'
-import { readdirSync, readFileSync } from 'fs'
+import url from 'node:url'
+import { dirname, join } from 'node:path'
+import { readFileSync } from 'node:fs'
 
-export async function get (req) {
-  const { path } = req
+export async function get () {
+  const here = dirname(url.fileURLToPath(import.meta.url))
+  const base = join(here, 'posts.json')
+  const posts = JSON.parse(readFileSync(base, 'utf-8')).reverse()
 
-  const dirUrl = new URL(`..${path}posts`, import.meta.url)
-  const files = readdirSync(dirUrl).filter(file => !file.startsWith('.')) // ignore hidden files like .DS_Store
-
-  const posts = files.map(file => {
-    const fileContent = readFileSync(`${dirUrl.pathname}/${file}`, 'utf-8')
-    const { data } = frontmatter(fileContent)
-    const slug = file.replace(/.md$/, '')
-    return {
-      slug,
-      title: data.title,
-      date: data.date,
-    }
-  }).sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
+  const hCardPath = join(here, 'h-card.json')
+  const hCard = JSON.parse(readFileSync(hCardPath, 'utf-8'))
 
   return {
     json: {
       title: 'Normal Flow — Dispatches on design & engineering',
       posts,
+      hCard,
     }
   }
 }

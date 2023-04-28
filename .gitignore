@@ -3,12 +3,14 @@ node_modules/
 
 # Enhance temp files
 .enhance/
+shared/enhance-styles/
 
 # Fonts
 public/woff
 
 # Generated assets
 public/static.json
+shared/static.json
 public/bundles/
 public/pages/
 

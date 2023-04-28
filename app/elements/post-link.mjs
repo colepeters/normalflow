@@ -24,7 +24,7 @@ export default function PostLink ({ html, state }) {
     <article>
       <date-time date='${date}' class='tracking3'></date-time>
       <h2 class='text-center'>
-        <a href='/posts/${href}'>
+        <a href='${href}'>
           <slot></slot>
         </a>
       </h2>

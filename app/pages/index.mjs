@@ -3,7 +3,7 @@ export default function Index ({ html, state }) {
   const { posts } = store
 
   const postsMarkup = posts.map(post =>
-    `<post-link date='${post.date.toISOString()}' href='${post.slug}'>${post.title}</post-link>`
+    `<post-link date='${post.frontmatter.date}' href='${post.href}'>${post.frontmatter.title}</post-link>`
   ).join('')
 
   return html`

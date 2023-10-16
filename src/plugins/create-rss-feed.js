@@ -43,7 +43,7 @@ async function generate () {
         .sort((a, b) => (a.post < b.post ? 1 : -1))
         .map(async (post) => await getData(post))
     ).catch(function(err) {
-      console.log(err.message); // some coding error in handling happened
+      console.log('ERROR!', err.message); // some coding error in handling happened
     })
   )
 

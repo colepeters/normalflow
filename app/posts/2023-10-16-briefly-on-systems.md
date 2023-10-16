@@ -1,5 +1,5 @@
 ---
-title: Lessons Learned
+title: Briefly, On Systems
 date: 2023-10-16
 excerpt: "Some things I’ve learned over the course of my life and career in regards to building systems (design, web, software, interpersonal, whatever), which may or may not be applicable to everyone."
 ---

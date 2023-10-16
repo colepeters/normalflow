@@ -1,6 +1,6 @@
 [
   {
-    "href": "/posts/an-introduction-to-constraint-based-design-systems",
+    "href": "/posts/2022-08-12-an-introduction-to-constraint-based-design-systems",
     "frontmatter": {
       "title": "An Introduction to Constraint Based Design Systems",
       "date": "2022-08-12T00:00:00.000Z",
@@ -8,7 +8,7 @@
     }
   },
   {
-    "href": "/posts/past-informs-the-present-begins-approach-to-css",
+    "href": "/posts/2023-01-10-past-informs-the-present-begins-approach-to-css",
     "frontmatter": {
       "title": "Past Informs the Present: Begin’s Approach to CSS",
       "date": "2023-01-10T00:00:00.000Z",
@@ -18,13 +18,21 @@
     }
   },
   {
-    "href": "/posts/redefining-developer-experience",
+    "href": "/posts/2023-02-28-redefining-developer-experience",
     "frontmatter": {
       "title": "Redefining Developer Experience",
       "date": "2023-02-28T00:00:00.000Z",
       "excerpt": "For years now, the most popular JS frameworks have carried out intense marketing initiatives based on the premise of improving developer experience (DX). What is it about these promises of great DX that is consistently delivering poor user experiences? Can we change our approach to DX for the betterment of end users?",
       "canonicalSite": "Begin",
       "canonicalUrl": "https://begin.com/blog/posts/2023-02-28-redefining-developer-experience"
+    }
+  },
+  {
+    "href": "/posts/2023-10-16-lessons-learned",
+    "frontmatter": {
+      "title": "Lessons Learned",
+      "date": "2023-10-16T00:00:00.000Z",
+      "excerpt": "Some things I’ve learned over the course of my life and career in regards to building systems (design, web, software, interpersonal, whatever), which may or may not be applicable to everyone."
     }
   }
 ]

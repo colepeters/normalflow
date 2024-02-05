@@ -181,7 +181,7 @@ In these ways and in others, I have always felt that the nature of atomic CSS fl
 There are, however, many common objections raised against the atomic CSS methodology. In general, these tend to be:
 
 <dl class='pl2'>
-  <dt>’It’s not semantic.’</dt>
+  <dt>‘It’s not semantic.’</dt>
   <dd class='mb0'>We’ve touched on this already, but it’s worth repeating: semantics, accessibility, and clarity <em>do</em> matter, but with all due respect to <a href='https://www.zeldman.com/2017/01/03/kiss-my-classname/'>Zeldman</a>, there is nothing inherently unsemantic, inaccessible, or unclear about ‘visual class names’, nor is there a reason for CSS to map to the same semantics as HTML.</dd>
 
   <dt>‘This is inline styles all over again.’</dt>

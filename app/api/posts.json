@@ -34,5 +34,13 @@
       "date": "2023-10-16T00:00:00.000Z",
       "excerpt": "Some things I’ve learned over the course of my life and career in regards to building systems (design, web, software, interpersonal, whatever), which may or may not be applicable to everyone."
     }
+  },
+  {
+    "href": "/posts/2024-02-08-patterns-for-style-composition-with-html-and-web-components",
+    "frontmatter": {
+      "title": "Patterns for Style Composition with HTML and Web Components",
+      "date": "2024-02-08T00:00:00.000Z",
+      "excerpt": "A detailed documentation of how I approach the challenges of design engineering"
+    }
   }
 ]

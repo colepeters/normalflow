@@ -66,7 +66,7 @@ A common complaint levelled at the use of single responsibility classes is that 
 </h1>
 ```
 
-This is where the use of templates comes in handy. By stashing this composition away in a reusable piece of markup, we can leverage the benefits of this approach to styling worrying about making mistakes or having to remember specific compositions of classes.
+This is where the use of templates comes in handy. By stashing this composition away in a reusable piece of markup, we can leverage the benefits of this approach to styling without worrying about making mistakes or having to remember specific compositions of classes.
 
 My favourite way to do this is using a library like [Enhance](https://enhance.dev) (which, disclaimer, I work on) to create [reusable custom elements](https://enhance.dev/docs/elements/). This technique would also work well for those writing [Web Components from scratch](https://developer.mozilla.org/en-US/docs/Web/API/Web_components).
 

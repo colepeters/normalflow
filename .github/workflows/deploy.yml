@@ -35,7 +35,7 @@ jobs:
           SITE_URL: ${{ secrets.SITE_URL_STAGING }}
 
       - name: Deploy to staging
-        uses: beginner-corp/actions/deploy@main
+        uses: beginner-corp/actions/deploy@v1
         with:
           begin_token: ${{ secrets.BEGIN_TOKEN }}
           begin_env_name: staging
@@ -68,7 +68,7 @@ jobs:
           SITE_URL: ${{ secrets.SITE_URL_PRODUCTION }}
 
       - name: Deploy to production
-        uses: beginner-corp/actions/deploy@main
+        uses: beginner-corp/actions/deploy@v1
         with:
           begin_token: ${{ secrets.BEGIN_TOKEN }}
           begin_env_name: production

@@ -13,7 +13,7 @@
     "viewportMin": 320,
     "viewportMax": 1500,
     "baseMin": 16,
-    "baseMax": 20,
+    "baseMax": 22,
     "scaleMin": "minor-third",
     "scaleMax": "perfect-fourth"
   },

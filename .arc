@@ -16,3 +16,7 @@ config styleguide.json
 
 @begin
 appID 6SS352F4
+
+@aws
+runtime nodejs20.x
+

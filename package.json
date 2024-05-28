@@ -8,7 +8,8 @@
     "lint": "eslint ./app/**/*.mjs --fix"
   },
   "dependencies": {
-    "@enhance/arc-plugin-enhance": "^5.0.2",
+    "@enhance/arc-plugin-enhance": "^11.0.0",
+    "@enhance/arc-plugin-styles": "^5.0.5",
     "@enhance/image": "^0.0.0-alpha.4",
     "arcdown": "^2.1.0",
     "feed": "^4.2.2",

@@ -1,30 +1,19 @@
-export default function Index ({ html, state }) {
+export default function Index({ html, state }) {
   const { store } = state
   const { posts } = store
 
   const postsMarkup = posts.map(post =>
-    `<post-link date='${post.frontmatter.date}' href='${post.href}'>${post.frontmatter.title}</post-link>`
+    `<post-link date="${post.frontmatter.date}" href="${post.href}">${post.frontmatter.title}</post-link>`
   ).join('')
 
   return html`
-    <style>
-      section {
-        margin-block: var(--space-3xl);
-        gap: var(--space-3xl);
-      }
+    <mast-head id="#"></mast-head>
 
-      .colophon {
-        font-size: var(--text--1);
-      }
-    </style>
-
-    <mast-head id='#'></mast-head>
-
-    <a href='/colophon' class='colophon block uppercase tracking3 text-center'>
+    <a href="/colophon" class="text-1 block uppercase tracking3 text-center">
       Colophon
     </a>
 
-    <section class='grid grid-row'>
+    <section class="grid grid-row mb7 gap7">
       ${postsMarkup}
     </section>
 

@@ -1,5 +1,22 @@
 {
-  "base": 16,
+  "typeScale": {
+    "steps": 6,
+    "viewportMin": 320,
+    "viewportMax": 1500,
+    "baseMin": 18,
+    "baseMax": 22,
+    "scaleMin": "minor-third",
+    "scaleMax": "perfect-fourth"
+  },
+  "spaceScale": {
+    "steps": 9,
+    "viewportMin": 320,
+    "viewportMax": 1500,
+    "baseMin": 16,
+    "baseMax": 20,
+    "scaleMin": "minor-third",
+    "scaleMax": "perfect-fourth"
+  },
   "color": {
       "dark": "hsl(266deg 10% 12%)",
       "dark-fade": "hsla(14deg 5% 23% / 50%)",

@@ -1,4 +1,4 @@
-export default function DateTime ({ html, state }) {
+export default function DateTime({ html, state }) {
   const { attrs } = state
   const { date } = attrs
 
@@ -9,11 +9,11 @@ export default function DateTime ({ html, state }) {
     <style>
       :host {
         display: block;
-        margin-bottom: var(--space-l);
+        margin-block-end: var(--space-2);
       }
     </style>
-    <p class='text-center'>
-      <time datetime='${date}' class='dt-published'>
+    <p class="text-center">
+      <time datetime="${date}" class="dt-published">
         ${formattedDate}
       </time>
     </p>

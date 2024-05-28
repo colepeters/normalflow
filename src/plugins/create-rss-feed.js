@@ -3,11 +3,10 @@ const { brotliCompressSync } = require('zlib')
 const base = join(__dirname, '..', '..', 'app', 'posts')
 
 function getHostname() {
-  console.log("url", process.env.SITE_URL)
   return process.env.SITE_URL ? process.env.SITE_URL : 'http://localhost:3333'
 }
 
-async function generate () {
+async function generate() {
   const { readdir, readFile, writeFile } = require('fs/promises')
   const { Feed } = await import('feed')
   const { Arcdown } = await import('arcdown')
@@ -38,7 +37,7 @@ async function generate () {
   }
 
   const items = (
-      await Promise.all( // eslint-disable-line
+    await Promise.all( // eslint-disable-line
       posts
         .sort((a, b) => (a.post < b.post ? 1 : -1))
         .map(async (post) => await getData(post))
@@ -93,7 +92,7 @@ module.exports = {
 }
 
 if (require.main === module) {
-  (async function () {
+  (async function() {
     try {
       generate()
     }

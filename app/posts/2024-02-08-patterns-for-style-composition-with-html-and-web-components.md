@@ -72,7 +72,7 @@ My favourite way to do this is using a library like [Enhance](https://enhance.de
 
 For example, using Enhance:
 
-```js
+```javascript
 // app/elements/my-h1.mjs
 
 export default function MyH1 ({ html }) {
@@ -104,7 +104,7 @@ Now that we’ve defined a custom element with our composition of styles, we can
 
 We can also create custom elements that compose other custom elements as well as styled generic elements, thus leveraging this pattern recursively:
 
-```js
+```javascript
 export default function HeroBanner ({ html }) {
   return html`
     <section class="p4 text-center">
@@ -141,7 +141,7 @@ Again, using Enhance, that would look like this:
 </my-button>
 ```
 
-```js
+```javascript
 export default function MyButton ({ html }) {
   return html`
     <style>

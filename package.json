@@ -4,19 +4,19 @@
   "scripts": {
     "metadata": "node ./src/plugins/create-post-metadata.js",
     "rss": "node ./src/plugins/create-rss-feed.js",
-    "start": "sandbox",
+    "start": "npx enhance dev",
     "lint": "eslint ./app/**/*.mjs --fix"
   },
   "dependencies": {
     "@enhance/arc-plugin-enhance": "^11.0.0",
     "@enhance/arc-plugin-styles": "^5.0.5",
     "@enhance/image": "^0.0.0-alpha.4",
-    "arcdown": "^2.1.0",
+    "arcdown": "^2.3.0",
     "feed": "^4.2.2",
     "gray-matter": "^4.0.3"
   },
   "devDependencies": {
-    "@architect/sandbox": "^5.4.1",
+    "@enhance/cli": "^1.0.7",
     "@enhance/types": "^0.5.0",
     "eslint": "^8.30.0"
   },

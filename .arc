@@ -11,9 +11,6 @@ create-rss-feed
 @enhance-styles
 config styleguide.json
 
-@begin
-appID 6SS352F4
-
 @aws
+region us-east-1
 runtime nodejs20.x
-

@@ -8,68 +8,52 @@ defaults:
     shell: bash
 
 jobs:
-  # Deploy the build
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: arc build
+        uses: architect/action-build@v3
+        with:
+          use_lock_file: false
+          node-version: 20
+
+  # Deploy to staging when pushing to main
   deploy_staging:
+    needs: build
     name: Deploy staging
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push' # Don't run twice for PRs (for now)
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     runs-on: ubuntu-latest
-    concurrency:
-      group: staging_${{ github.repository }}
 
     steps:
-      - name: Check out repo
-        uses: actions/checkout@v4
+      - name: arc deploy
+        uses: architect/action-deploy@v1
+        with: 
+          use_lock_file: false
+          node-version: 20
+          aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
+          aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - name: Image Cache Warming
+        run: npx @enhance/image warm --directory /public/images --domain https://f4j12xutj7.execute-api.us-east-1.amazonaws.com
 
-      - name: Install
-        run: npm install
-
-      - name: Create blog post metadata
-        run: npm run metadata
-
-      - name: Create RSS feed
-        run: npm run rss
-        env:
-          SITE_URL: ${{ secrets.SITE_URL_STAGING }}
-
-      - name: Deploy to staging
-        uses: beginner-corp/actions/deploy@v1
-        with:
-          begin_token: ${{ secrets.BEGIN_TOKEN }}
-          begin_env_name: staging
-          channel: 'main'
-
-  # Deploy the build
+  # Deploy to production when pushing with a version tag
   deploy_production:
+    needs: build
     name: Deploy production
-    if: startsWith(github.ref, 'refs/tags/v') && github.event_name == 'push' # Don't run twice for PRs (for now)
+    if: startsWith(github.ref, 'refs/tags/v') && github.event_name == 'push'
     runs-on: ubuntu-latest
-    concurrency:
-      group: production_${{ github.repository }}
 
     steps:
-      - name: Check out repo
-        uses: actions/checkout@v4
+      - name: arc deploy
+        uses: architect/action-deploy@v1
+        with: 
+          use_lock_file: false
+          node-version: 20
+          aws_access_key_id: ${{secrets.AWS_ACCESS_KEY_ID}}
+          aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - name: Image Cache Warming
+        run: npx @enhance/image warm --directory /public/images --domain https://colepeters.com
 
-      - name: Install
-        run: npm install
 
-      - name: Create blog post metadata
-        run: npm run metadata
-
-      - name: Create RSS feed
-        run: npm run rss
-        env:
-          SITE_URL: ${{ secrets.SITE_URL_PRODUCTION }}
-
-      - name: Deploy to production
-        uses: beginner-corp/actions/deploy@v1
-        with:
-          begin_token: ${{ secrets.BEGIN_TOKEN }}
-          begin_env_name: production
-          channel: 'main'

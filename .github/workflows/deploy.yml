@@ -35,7 +35,7 @@ jobs:
           aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
 
       - name: Image Cache Warming
-        run: npx @enhance/image warm --directory /public/images --domain https://f4j12xutj7.execute-api.us-east-1.amazonaws.com
+        run: npx @enhance/image warm --directory /public/images --domain https://mamssz98pa.execute-api.us-east-1.amazonaws.com
 
   # Deploy to production when pushing with a version tag
   deploy_production:
@@ -54,6 +54,6 @@ jobs:
           aws_secret_access_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
 
       - name: Image Cache Warming
-        run: npx @enhance/image warm --directory /public/images --domain https://colepeters.com
+        run: npx @enhance/image warm --directory /public/images --domain https://normalflow.pub
 
 
